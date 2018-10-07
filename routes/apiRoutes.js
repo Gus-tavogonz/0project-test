@@ -28,6 +28,13 @@ module.exports = function(app) {
     });
   });
 
+
+  app.post("/api/random", function(req, res) {
+    db.Random.create(req.body).then(function(dbRandom) {
+      res.json(dbRandom);
+    });
+  });
+
   // Delete an example by id
   app.delete("/api/examples/:id", function(req, res) {
     db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {

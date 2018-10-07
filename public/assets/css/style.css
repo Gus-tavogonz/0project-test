@@ -65,17 +65,6 @@ body{
     font-family: 'Lato', sans-serif;
  }
 
-
-
- /*NAV BAR STARTS HERE*/
-
-.lead{
-    color:white;
-    text-align:center;
-    margin-top: 300px;
-    font-weight: bold;
-    font-size: 35px;
-}
  .navbar-brand{
     font-family: 'Lato', sans-serif;
     font-size: 25px;
@@ -100,26 +89,64 @@ color:#202020;
 font-family: 'Pacifico', cursive;
 font-size: 40px;
 align-content: center;
+margin:auto;
 
 }
 
  /*HERO IMAGE STARTS HERE*/
 .hero-section{
-    background-image: url("/assets/images/banner.jpg") ;
+    background-image: url("/assets/images/-7.jpg") ;
 
 }
 
  
  .hero-image{
-    background-image:url("/assets/images/banner.jpg");
+    background-image:url("/assets/images/-7.jpg");
+
 	
     background-size: cover;
 
 	background-blend-mode: multiply;
 	
 	background-repeat: no-repeat;
-	display: block;5
+	display: block;
  }
+/**/
+ .jumbo-box{
+    background-color: lightseagreen;
+    width:80%;
+    margin: auto;
+   
+    
+   opacity:.9;  
+} 
+
+
+.jumbo-box-pre-footer{
+    background-color: lightseagreen;
+    width:70%;
+    margin: auto;
+   
+    
+   opacity:.9; 
+}
+
+ /*NAV BAR STARTS HERE*/
+
+.lead{
+    color:white;
+    text-align:center;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+
+}
+
+
+
+
+
 
 .lead-footer{
     margin-top: 20px;
@@ -151,12 +178,12 @@ align-content: center;
     margin-top: 30px;
 }
 
-.lead-pre-footer{
+.hero-image-pre-footer p{
     color: orangered;
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    padding-top: 35px;
+    padding: 15px;
 
 }
 
@@ -177,7 +204,18 @@ align-content: center;
 /* NEWSLETTER ENDS HERE */
 
 
+h3{
+margin: 3px;
+padding: 3px;
+}
 
+.col-md-6{
+text-align: center;
+}
+
+.col-md-4{
+    text-align: center;
+}
 
 
 
@@ -190,13 +228,13 @@ body {
 /* Toggle Styles */
 
 #wrapper {
+    
      padding-left: 250px;
 }
 
 #wrapper.toggled {
    
-
-    padding-left: 0;
+    padding-left: 0px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -281,7 +319,7 @@ body {
     background: none;
 }
 
-@media(min-width:768px) {
+
     #wrapper {
         padding-left: 250px;
     }
@@ -307,7 +345,7 @@ body {
         position: relative;
         margin-right: 0;
     }
-}
+
 
 /*media query 767*/
 
@@ -323,4 +361,14 @@ body {
     .about{
         height: 725px;
     }
+}
+
+/* pick up line style*/
+
+.pick-up-line{
+
+    margin: auto;
+    padding: 40px;
+    align-content: center;
+
 }

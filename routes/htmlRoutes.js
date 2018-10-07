@@ -26,6 +26,14 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/randomizer.html", function(req, res) {
+    db.Random.findAll({}).then(function(dbRandom) {
+      res.render("randomizer", {
+        examples: dbRandom
+      });
+    });
+  });
+
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
